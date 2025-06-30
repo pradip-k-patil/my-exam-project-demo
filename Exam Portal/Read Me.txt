@@ -1,0 +1,43 @@
+# ExamApp
+
+This is a full-stack web application for conducting and managing exams, built with a React frontend and Spring Boot backend.
+
+---
+
+## 🔧 Backend (Spring Boot)
+
+- **Language:** Java 8
+- **Framework:** Spring Boot
+- **Spring Boot Version:** Mix of `2.2.1.RELEASE`, `2.2.2.RELEASE`, `2.3.1.RELEASE`, `2.4.10`
+- **Build Tool:** Maven
+- **Database:** MySQL `6.0.6` Connector
+- **Port:** `9090`
+- **JPA Config:**
+  - `ddl-auto`: `none` (no schema generation)
+  - SQL Logging: enabled
+- **Mail Service:**
+  - Host: `smtp.gmail.com`
+  - Port: `587`
+  - Username: `nikhiljks20@gmail.com`
+  - TLS: Enabled
+  - Auth: Enabled
+
+### 🔐 Important
+⚠️ **Do not commit `.properties` files or credentials (e.g., Gmail password) in public repos.** Move sensitive data to environment variables or use tools like Spring Cloud Config / Vault.
+
+---
+
+## 💻 Frontend (React)
+
+- **Framework:** React 18
+- **Router:** React Router DOM 6
+- **Styling:** Bootstrap 5, React-Bootstrap
+- **State & Requests:** Axios for API calls
+- **Scripts:**
+  - `npm start` – Start dev server
+  - `npm build` – Build for production
+
+---
+
+## 🌐 Project Structure
+
