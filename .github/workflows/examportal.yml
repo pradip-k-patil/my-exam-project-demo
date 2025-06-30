@@ -27,16 +27,16 @@ jobs:
 
       # 🛠️ Backend build
       - name: Build Backend
-        working-directory: ./backend
+        working-directory: backend
         run: mvn clean package -DskipTests
 
       # 🛠️ Frontend build
       - name: Install Frontend Dependencies
-        working-directory: ./frontend
+        working-directory: frontend
         run: npm install
 
       - name: Build Frontend
-        working-directory: ./frontend
+        working-directory: frontend
         run: npm run build
 
       # ✅ Docker build
